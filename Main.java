@@ -62,7 +62,7 @@ public class Main {
 
     public static void uploadToDB(){
 
-        String connectionURL = "jdbc:sqlserver://database-1.cbjmpwcdjfmq.us-east-1.rds.amazonaws.com:1433;databaseName=vanderhoof;user=admin;password=mco368Touro";
+        String connectionURL = "jdbc:sqlserver://database-1.cbjmpwcdjfmq.us-east-1.rds.amazonaws.com:1433;databaseName=vanderhoof;user=admin;password=******";
         try (Connection con = DriverManager.getConnection(connectionURL);
              PreparedStatement ps = con.prepareStatement("INSERT INTO Emails VALUES (?)")) {
             con.setAutoCommit(false);
